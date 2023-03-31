@@ -4,6 +4,7 @@ const greeting = document.querySelector("#greeting");
 const toDoFormHidden = document.querySelector("form#todo-form");
 const toDoListHidden = document.querySelector("ul#todo-list");
 const quoteDiv = document.querySelector("div#quote");
+const weatherDiv = document.querySelector("div#weather");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -23,6 +24,7 @@ function paintGreetings(username) {
   quoteDiv.classList.remove(HIDDEN_CLASSNAME);
   toDoFormHidden.classList.remove(HIDDEN_CLASSNAME);
   toDoListHidden.classList.remove(HIDDEN_CLASSNAME);
+  weatherDiv.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
